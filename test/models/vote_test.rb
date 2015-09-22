@@ -6,7 +6,7 @@ class VoteTest < ActiveSupport::TestCase
    end
 
    def test_has_votes
-     danny = Candidate.new
+     danny = Candidate.new(name: "Danny", hometown: "Tusca", district: "9", party: "D")
      vote = Vote.new
 
      danny.votes << vote
