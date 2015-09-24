@@ -2,7 +2,8 @@ require 'test_helper'
 
 class CandidateTest < ActiveSupport::TestCase
  def test_has_candidate
-   assert Candidate
+  d = Candidate.new(name: "Danny", hometown: "Tusca", district: "9", party: "D")
+  assert d.save
  end
 
  def test_candidate_has_votes
